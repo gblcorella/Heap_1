@@ -1,4 +1,3 @@
-# Gabriel Corella heap1 exploit
 from pwn import * 
 binary_name = "./heap1"
 

@@ -1,4 +1,4 @@
-~First Heap Exploitation~
+First Heap Exploitation
 
 Idea: 
 	Essentially we get the forward pointer address to the glibc arena from doing a double free on an unsorted bin, and but we dont need that address to calculate anything on our stack but rather calculate the target using the main_arena to overwrite our free hook and launch a shell. Main arena gives us glibc start which gives us free hook and system sh.
